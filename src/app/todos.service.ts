@@ -18,14 +18,7 @@ export function add(todo: Omit<Todo, 'id'>): Promise<Todo> {
     }, 2000);
   });
 }
-// export function remove(todo: Todo): Promise<number> {
-//   return new Promise((res, rej) => {
-//     setTimeout(() => {
-//       todos = todos.filter((todo) => todo.id !== todo.id);
-//       res(todo.id);
-//     }, 2000);
-//   });
-// }
+
 export function update(newTodo: Partial<Todo>, id: number): Promise<Todo> {
   return new Promise((res, rej) => {
     setTimeout(() => {
